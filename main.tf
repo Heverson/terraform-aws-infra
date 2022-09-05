@@ -13,7 +13,6 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-# GET MyIPv4 Address
 data "http" "myip" {
   url = "http://ipv4.icanhazip.com"
 }
@@ -31,6 +30,7 @@ resource "aws_instance" "dev_app" {
 
   vpc_security_group_ids = [ "${aws_security_group.access_ssh.id}" ]
 }
+
 resource "aws_instance" "dev4" {
   ami = "ami-052efd3df9dad4825"
   instance_type = "t2.micro"
@@ -46,6 +46,7 @@ resource "aws_instance" "dev4" {
     aws_s3_bucket.dev4
   ]
 }
+
 resource "aws_instance" "dev5" {
   ami = "ami-052efd3df9dad4825"
   instance_type = "t2.micro"
@@ -58,6 +59,7 @@ resource "aws_instance" "dev5" {
 
   vpc_security_group_ids = [ "${aws_security_group.access_ssh.id}" ]
 }
+
 resource "aws_security_group" "access_ssh" {
   name        = "access_ssh"
   description = "Access SSH"
@@ -75,6 +77,7 @@ resource "aws_security_group" "access_ssh" {
     Name = "ssh"
   }
 }
+
 resource "aws_s3_bucket" "dev4" {
   bucket = "hrolim-dev4"
   
