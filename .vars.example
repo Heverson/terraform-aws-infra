@@ -23,8 +23,8 @@ variable "vpcs" {
     type = map(string)
 
     default = {
-        "us-east-1" = "vpc-0e54669a9d70cc13a",
-        "us-east-2" = "vpc-c79793af"
+        "us-east-1" = "vpc-********",
+        "us-east-2" = "vpc-********"
     }
 }
 
@@ -32,8 +32,8 @@ variable "sub_nets" {
     type = map(string)
 
     default = {
-        "us-east-1" = "subnet-0421c58519e6a0e11",
-        "us-east-2" = "subnet-df6702a5"
+        "us-east-1" = "subnet-********",
+        "us-east-2" = "subnet-********"
     }
 }
 
@@ -41,6 +41,6 @@ variable "cdirs_remote_access" {
     type = list(string)
 
     default = [
-        "177.73.98.221/32"
+        "***.**.**.***/32"
     ]
 }
