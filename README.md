@@ -2,13 +2,16 @@
 
 <p align="center">This case study, I will be create enviroment in AWS usyng EC2, Security Groups, S3 and DynamoDB.<p>
 
-- Create dynamic EC2 Instances Ubuntu 
-- Add access SSH for Instances 
-- Create EC2 Instance in another region and usyng the same ssh key 
-- Create Bucket S3 and associate a Instance EC2
-- Create Database Dynamodb
+  ## SUMMARY
 
-<img width="482" alt="Screen Shot 2022-09-08 at 11 42 29" src="https://user-images.githubusercontent.com/729786/189152066-3eeab4e9-785f-4915-b557-278d1bf76d6e.png">
+  - Create dynamic EC2 Instances Ubuntu 
+  - Add access SSH for Instances 
+  - Create EC2 Instance in another region and usyng the same ssh key 
+  - Create Bucket S3 and associate a Instance EC2
+  - Create Database Dynamodb
+  
+
+<img width="482" alt="Screen Shot 2022-09-08 at 11 42 29" src="https://user-images.githubusercontent.com/729786/189152066-3eeab4e9-785f-4915-b557-278d1bf76d6e.png" alt="Enviroment AWS Cloud">
 
 ## Create AWS account
 This <a href="https://aws.amazon.com/pt/premiumsupport/knowledge-center/create-and-activate-aws-account/">link</a> set a tutorial Create AWS Account
